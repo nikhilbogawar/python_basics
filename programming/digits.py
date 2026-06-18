@@ -52,4 +52,24 @@
 #     n=n//10
 # print(s)  # 1
 
-#
+# Write a program to Find Sum of Digits of a Given Number if the input is 25696 then the output should be 2 + 5 + 6 + 9 + 6
+n=int(input())
+t=n
+rev=0
+if n<=0:
+    print("Invalid Input.")
+else:
+    while(n>0):
+        r=n%10
+        rev=rev*10+r
+        n=n//10
+    
+    c=0
+    while(rev>0):
+        c=c+1
+        if c>1:
+            print(end=" + ")
+        r=rev%10
+        print(r,end="")
+        rev=rev//10
+    print(".")
