@@ -121,16 +121,21 @@
 
 # print sum of digits of a number
 # n=int(input())
-# sum=0
+# c=0
 # if n<=0:
 #     print("Invalid Input")
 # else:
-#     a=""
-#     while(n>0):
-#         r=n%10
-#         if a=="":
-#             a=str(r)
-#         else:
-#             a=str(r)+" + "+a
-#         n=n//10
-#     print(a+".")
+#     rev=0
+#     t=n
+#     while t>0:
+#         r=t%10
+#         rev=rev*10+r
+#         t=t//10
+#     while rev>0:
+#         r=rev%10
+#         rev=rev//10
+#         c=c+1
+#         if c>1:
+#             print(end=" + ")
+#         print(r,end="")
+#     print(".")
