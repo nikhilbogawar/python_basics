@@ -60,20 +60,23 @@
 
 # print sum of 'n' natural numbers without using formula
 # n=int(input())
+# c=0
 # if n==0:
-#     print("Invalid Input")
+#     print("InvaLid Input.")
 # elif n<0:
-#     print("Sorry! you have entered the negative value")
+#     print("Sorry! you have Entered Negative Values.")
 # else:
 #     sum=0
 #     a=""
 #     for i in range(1,n+1):
 #         sum=sum+i
-#         if a=="":
-#             a+=str(i)
-#         else:
-#             a=a+" + "+str(i)
-#     print(f"Sum of 'n' natural numbers is {a} = {sum}")
+#         c=c+1
+#         if c==1:
+#             print(f"Sum of 'N' Natural Numbers is ",end="")
+#         if c>1:
+#             print(end=" + ")
+#         print(i,end="")
+#     print(f" = {sum}.")
 
 # print the sum of the even digits in a given number
 # n=int(input())
