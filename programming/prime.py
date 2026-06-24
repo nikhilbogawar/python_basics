@@ -100,3 +100,25 @@
 # print("Sum:",sum)
 # print("Average:",sum/c)
 
+# print prime without using factor count
+# n=int(input())
+# c=0
+# c1=2
+# if n<=0:
+#     print("Invalid Input")
+# else:
+#     while(True):
+#         b=True
+#         for i in range(2,int(c1**0.5)+1):
+#             if c1%i==0:
+#                 b=False
+#                 break
+#         if b==True and c1>1:
+#             c+=1
+#             if c>1:
+#                 print(end=", ")
+#             print(c1,end="") 
+#             if c==n:
+#                 break 
+#         c1+=1
+            
