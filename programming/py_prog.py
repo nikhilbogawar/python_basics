@@ -127,14 +127,43 @@
 #         sum=sum+i
 # print("average of the alternative even number is:",int(sum/c))
 #------------------------------------------------------------------------
-a = float(input())
-b= float(input())
-c=0
-while(round(a,1)<=b):
-   c=c+1
-   if c>1:
-       print(end=", ")
-   print(f"{a:.1f}^2",end="")
-   a=a+0.2
-print(".")
-        
+# a = float(input())
+# b= float(input())
+# c=0
+# while(round(a,1)<=b):
+#    c=c+1
+#    if c>1:
+#        print(end=", ")
+#    print(f"{a:.1f}^2",end="")
+#    a=a+0.2
+# print(".")
+#--------------------------------------------------------  
+# print alternative even numbers in range
+# n=int(input())
+# n1=int(input())
+# if n>n1:
+#     print("INVALID INPUTS")
+# else:
+#     if n%2!=0:
+#         n=n+1
+#     c=0
+#     for i in range(n,n1+1,4):
+#         print(i,end=" ")
+#         c=c+1
+#     if c==0:
+#         print("NO NUMBERS")
+#------------------------------------------------------------
+# a=int(input())
+# b=int(input())
+# c=0
+# if a>0 and b>0:
+#     for i in range(a,b+1,2):
+#         c=c+1
+#         if c>1:
+#             print(end=", ")
+
+#         print(f"{i}^2",end="")
+# else:
+#     print("Invalid Inputs")
+# input  : 10  31
+# output : 10^2, 12^2, 14^2, 16^2, 18^2, 20^2, 22^2, 24^2, 26^2, 28^2, 30^2

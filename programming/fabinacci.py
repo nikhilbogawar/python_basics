@@ -33,7 +33,7 @@
 # else:
 #     print("Invalid Inputs")
 
-# to print first N terms of Alternative Fibonaci Series
+# to print first N terms of Alternative Fibonacci Series
 # n=int(input())
 # a,b=0,1
 # ac=0
@@ -73,6 +73,7 @@
 # else:
 #     print("Invalid Inputs")
 
+
 # print fibonacci series in the given range
 # n=int(input())
 # n1=int(input())
@@ -92,6 +93,28 @@
 #         print("No Fibonacci Series")
 # else:
 #     print("Invalid Inputs")
+
+
+# print fibonacci series between in the given range
+# n=int(input())
+# n1=int(input())
+# a,b=0,1
+# count=0
+# if n>n1:
+#     n,n1=n1,n
+# if a>=0 and b>=0:
+#     while(a<n1):
+#         if a>n:
+#             print(a,end=" ")
+#             count=count+1
+#         c=a+b
+#         a=b
+#         b=c
+#     if count==0:
+#         print("No Fibonacci Series")
+# else:
+#     print("Invalid Inputs")
+
 
 # print first N terms in the fibonacci series
 # n=int(input())
@@ -136,3 +159,15 @@
 #     print(sum)
 # else:
 #     print("Invalid Input")
+
+# check weather the given input is a fibonacci number or not
+# n=int(input())
+# a,b=0,1
+# while a<n:
+#     c=a+b
+#     a=b
+#     b=c
+# if a==n:
+#     print("The Given Number is a Fibonacci")
+# else:
+#     print("The Given Number is not a Fibonacci")

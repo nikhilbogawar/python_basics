@@ -100,25 +100,40 @@
 # print("Sum:",sum)
 # print("Average:",sum/c)
 
-# print prime without using factor count
+# print N prime without using factor count
 # n=int(input())
 # c=0
-# c1=2
+# p=2
 # if n<=0:
 #     print("Invalid Input")
 # else:
 #     while(True):
 #         b=True
-#         for i in range(2,int(c1**0.5)+1):
-#             if c1%i==0:
+#         for i in range(2,int(p**0.5)+1):
+#             if p%i==0:
 #                 b=False
 #                 break
-#         if b==True and c1>1:
+#         if b==True and p>1:
 #             c+=1
 #             if c>1:
 #                 print(end=", ")
-#             print(c1,end="") 
+#             print(p,end="") 
 #             if c==n:
 #                 break 
-#         c1+=1
-            
+#         p+=1
+
+# print N prime numbers using factor count
+# n=int(input("Enter the input:"))
+# p=2
+# c=0
+# while(True):
+#     fc=0
+#     for i in range(1,p+1):
+#         if p%i==0:
+#             fc=fc+1
+#     if fc==2:
+#         print(p,end=" ")
+#         c=c+1
+#         if c==n:
+#             break
+#     p=p+1
