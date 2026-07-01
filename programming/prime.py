@@ -137,3 +137,46 @@
 #         if c==n:
 #             break
 #     p=p+1
+
+# check if a given number is prime. If it is not prime, print "Not a prime number" and stop. If it is prime, find and print the nearest smaller and larger prime numbers, and then display the closest one.
+n = int(input())
+p = True
+if n < 2:
+    p = False
+else:
+    for i in range(2, n):
+        if n % i == 0:
+            p = False
+            break
+
+if p == False:
+    print("Not a prime number")
+else:
+    low = n - 1
+    while low > 1:
+        a = True
+        for i in range(2, low):
+            if low % i == 0:
+                a = False
+                break
+        if a == True:
+            break
+        low -= 1
+    high = n + 1
+    while True:
+        a = True
+        for i in range(2, high):
+            if high % i == 0:
+                a = False
+                break
+        if a == True:
+            break
+        high += 1
+    print("Lowest near prime:", low)
+    print("Highest near prime:", high)
+    if (n - low) == (high - n):
+        print("Nearest prime:", low, high)
+    elif (n - low) <= (high - n):
+        print("Nearest prime:", low)
+    else:
+        print("Nearest prime:", high)
