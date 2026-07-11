@@ -117,3 +117,29 @@ for i in range(n,0,-1):
 #   32123
 #    212
 #     1
+print("---------------------------------------------------")
+for i in range(1,n+1):
+    k=1
+    print(" "*(n-i),end="")
+    for j in range(1,i+1):
+        print(k,end=" ")
+        k=k*(i-j)//j
+    print()
+#     1 
+#    1 1 
+#   1 2 1 
+#  1 3 3 1 
+# 1 4 6 4 1 
+print("---------------------------------------------------")
+for i in range(n,0,-1):
+    k=1
+    print(" "*(n-i),end="")
+    for j in range(1,i+1):
+        print(k,end=" ")
+        k=k*(i-j)//j
+    print()
+# 1 4 6 4 1 
+#  1 3 3 1 
+#   1 2 1 
+#    1 1 
+#     1 
