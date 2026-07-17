@@ -151,3 +151,64 @@ for i in range(n-1,0,-1):
 #   0 0 0 
 #    0 0 
 #     0 
+print("------------------------------------------")
+for i in range(1,n+1):
+    for j in range(1,i):
+        print("  ",end="")
+    for j in range(i,n+1):
+        print(j,end=" ")
+    for j in range(n-1,i-1,-1):
+        print(j,end=" ")
+    print()
+for i in range(n-1,0,-1):
+    for j in range(1,i):
+        print("  ",end="")
+    for j in range(i,n+1):
+        print(j,end=" ")
+    for j in range(n-1,i-1,-1):
+        print(j,end=" ")
+    print()
+# 1 2 3 4 5 4 3 2 1 
+#   2 3 4 5 4 3 2 
+#     3 4 5 4 3 
+#       4 5 4 
+#         5 
+#       4 5 4 
+#     3 4 5 4 3 
+#   2 3 4 5 4 3 2 
+# 1 2 3 4 5 4 3 2 1 
+print("----------------------------------------")
+for i in range(n):
+    for j in range(n):
+        if j==0 or j==n-1 or i==j:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
+# *   *
+# **  *
+# * * *
+# *  **
+# *   *
+print("--------------------------------------")
+for i in range(1,n+1):
+    for j in range(n-i+1,n+1):
+        print(j,end="")
+    for j in range(n-1,(n-i+1)-1,-1):
+        print(j,end="")
+    print()
+for i in range(n-1,0,-1):
+    for j in range(n-i+1,n+1):
+        print(j,end="")
+    for j in range(n-1,(n-i+1)-1,-1):
+        print(j,end="")
+    print()
+# 5
+# 454
+# 34543
+# 2345432
+# 123454321
+# 2345432
+# 34543
+# 454
+# 5
