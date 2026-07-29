@@ -138,3 +138,45 @@
 #     for j in range(i+1,len(l)):
 #         if (l[i]+l[j]==k):
 #             print(l[i],l[j])
+
+
+# Find index of an element in a list if it the element is repeated again it hsould also find the index value
+# l=list(map(int,input().split()))
+# n=int(input())
+# if n in l:
+#     k=0
+#     c=l.count(n)
+#     for i in range(c):
+#         k=l.index(n,k)
+#         print(k)
+#         k=k+1
+# else:
+#     print("No Element Found")
+
+
+# Remove element from the list which is repeated the same element again it should also remove 
+# l=list(map(int,input().split()))
+# n=int(input())
+# if n in l:
+#     c=l.count(n)
+#     for i in range(c):
+#         l.remove(n)
+#     print(*l)
+# else:
+#     print("No Element Found")
+
+
+# print sum of the elements up to given index in a list
+# l=list(map(int,input().split()))
+# i=int(input())
+# if (i>=-(len(l)) and i<len(l)):
+#     sum=0
+#     if i>=0:
+#         for j in range(i+1):
+#             sum=sum+l[j]
+#     else:
+#         for j in range(-1,i-1,-1):
+#             sum=sum+l[j]
+#     print(sum)
+# else:
+#     print("No Element found")
