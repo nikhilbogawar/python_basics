@@ -261,3 +261,54 @@ if valid:
         print(f"{hd} -> {octal}")
     else:
         print(octal)
+
+#----------------------------------------------------------------------------
+
+# binary to hexa decimal
+bin=input().strip()
+dec=0
+c=0
+valid=True
+for i in range(len(bin)-1,-1,-1):
+    ch=bin[i]
+    if ch=='0' or ch=='1':
+        val=int(ch)
+        dec+=val*(2**c)
+        c+=1
+    else:
+        print("Invalid input")
+        valid=False
+        break
+if valid==True:
+    if dec==0:
+        print('0')
+    else:
+        hexdec=[]
+        while dec>0:
+            r=dec%16
+            if r<=9:
+                hexdec.append(str(r))
+            else:
+                hexdec.append(chr(r+55))
+            dec=dec//16
+        hd="".join(hexdec)
+        print(hd[::-1])
+
+#-------------------------------------------------------------------------
+
+# decimal to octal
+def dectooct(dec):
+    oct=[]
+    while dec>0:
+        r=dec%8
+        oct.insert(0,r)
+        dec=dec//8
+    return oct
+dec=int(input())
+if dec==0:
+    print("ZERO")
+elif dec<0:
+    print("INVALID Input")
+else:
+    oct=dectooct(dec)
+    print(*oct,sep="")
